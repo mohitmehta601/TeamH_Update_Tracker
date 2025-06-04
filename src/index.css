@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  --gradient-secondary: linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%);
+  --gradient-accent: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply text-gray-200 bg-gray-900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lexend', sans-serif;
+  line-height: 1.2;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400;
+}
+
+.gradient-bg {
+  @apply bg-gradient-to-r from-blue-600 to-purple-600;
+}
+
+.gradient-border {
+  @apply border border-transparent bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-border;
+}
+
+.dark-card {
+  @apply bg-gray-800 bg-opacity-50 backdrop-blur-lg;
+}
